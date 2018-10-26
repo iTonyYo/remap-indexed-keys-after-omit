@@ -192,7 +192,7 @@ yarn test
 
 - [ ] 借助 [David DM](https://david-dm.org/) 实现依赖检测；
 
-- [ ] 借助 [Travis CI](https://travis-ci.org/) 实现持续集成；
+- [X] 借助 [Travis CI](https://travis-ci.org/) 实现持续集成；
 
 - [ ] 借助 [Coveralls](https://coveralls.io/) 可视化测试用例覆盖率；
 
