@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/iTonyYo/remap-indexed-keys-after-omit.svg?branch=master)](https://travis-ci.org/iTonyYo/remap-indexed-keys-after-omit)
+[![Build Status](https://travis-ci.org/iTonyYo/remap-indexed-keys-after-omit.svg?branch=master)](https://travis-ci.org/iTonyYo/remap-indexed-keys-after-omit) [![dependencies Status](https://david-dm.org/iTonyYo/remap-indexed-keys-after-omit/status.svg)](https://david-dm.org/iTonyYo/remap-indexed-keys-after-omit)
 
 # `remapIndexedKeysAfterOmit()`
 
@@ -192,12 +192,12 @@ yarn test
 
 - [ ] 自动化发布；
 
-- [ ] 借助 [David DM](https://david-dm.org/) 实现依赖检测；
+- [X] 使用 [David DM](https://david-dm.org/) 实现 `依赖是否最新` 检测；
 
-- [X] 借助 [Travis CI](https://travis-ci.org/) 实现持续集成；
+- [X] 使用 [Travis CI](https://travis-ci.org/) 实现持续集成；
 
-- [ ] 借助 [Coveralls](https://coveralls.io/) 可视化测试用例覆盖率；
+- [ ] 使用 [Coveralls](https://coveralls.io/) 可视化测试用例覆盖率；
 
-- [ ] 借助 [Codacy](https://www.codacy.com/) 实现代码质量检测；
+- [ ] 使用 [Codacy](https://www.codacy.com/) 实现代码质量检测；
 
 - [ ] 编写 [`SETUP.md`]()；
