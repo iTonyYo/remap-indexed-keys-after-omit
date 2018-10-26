@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/iTonyYo/remap-indexed-keys-after-omit.svg?branch=master)](https://travis-ci.org/iTonyYo/remap-indexed-keys-after-omit)
+
 # `remapIndexedKeysAfterOmit()`
 
 针对键为 `index-x` 或 `x-index-y` 类似模式的被索引对象，如：
