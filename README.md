@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/iTonyYo/remap-indexed-keys-after-omit.svg?branch=master)](https://travis-ci.org/iTonyYo/remap-indexed-keys-after-omit) [![dependencies Status](https://david-dm.org/iTonyYo/remap-indexed-keys-after-omit/status.svg)](https://david-dm.org/iTonyYo/remap-indexed-keys-after-omit)
+[![Build Status](https://travis-ci.org/iTonyYo/remap-indexed-keys-after-omit.svg?branch=master)](https://travis-ci.org/iTonyYo/remap-indexed-keys-after-omit) [![dependencies Status](https://david-dm.org/iTonyYo/remap-indexed-keys-after-omit/status.svg)](https://david-dm.org/iTonyYo/remap-indexed-keys-after-omit) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/4de000aaca86479ab0dcf13622117d31)](https://www.codacy.com/app/swzyocowboy/remap-indexed-keys-after-omit?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=iTonyYo/remap-indexed-keys-after-omit&amp;utm_campaign=Badge_Grade)
 
 # `remapIndexedKeysAfterOmit()`
 
@@ -198,6 +198,6 @@ yarn test
 
 - [ ] 使用 [Coveralls](https://coveralls.io/) 可视化测试用例覆盖率；
 
-- [ ] 使用 [Codacy](https://www.codacy.com/) 实现代码质量检测；
+- [X] 使用 [Codacy](https://www.codacy.com/) 实现代码质量检测；
 
 - [ ] 编写 [`SETUP.md`]()；
