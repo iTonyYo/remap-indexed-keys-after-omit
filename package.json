@@ -22,8 +22,8 @@
   },
   "lint-staged": {
     "*.js": [
-      "npm run test",
-      "npm run lint"
+      "npm run lint",
+      "npm run test"
     ]
   },
   "keywords": [
