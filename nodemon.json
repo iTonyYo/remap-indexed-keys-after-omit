@@ -1,0 +1,22 @@
+{
+  "events": {
+    "restart": "node ./scripts/clear-console"
+  },
+  "ignore": [
+    ".git",
+    "node_modules/**/node_modules",
+    "coverage"
+  ],
+  "execMap": {
+    "js": "node --harmony"
+  },
+  "watch": [
+    "remap-indexed-keys-after-omit.js",
+    "remap-indexed-keys-after-omit-sync.js",
+    "debug.js"
+  ],
+  "env": {
+    "NODE_ENV": "development"
+  },
+  "ext": "js,json"
+}
