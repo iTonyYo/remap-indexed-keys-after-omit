@@ -126,19 +126,19 @@ const { remapIndexedKeysAfterOmit }
   
 ## 配置
 
-- [X] **`indexPlaceholder`**，支持自定义索引占位符；
+- [X] **`indexPlaceholder`**，支持自定义索引占位符；
 
-- [X] **`gap`**，支持自定义递减/递增幅度；
+- [X] **`gap`**，支持自定义递减/递增幅度；
 
-- [X] **`object`**，支持传入 `从小到大索引` 的对象；
+- [X] **`object`**，支持传入 `从小到大索引` 的对象；
 
-- [ ] **`object`**，支持传入 `从大到小索引` 的对象；
+- [ ] **`object`**，支持传入 `从大到小索引` 的对象；
 
-- [X] **`omitIndex`**，指定索引以删除这个位置的键值对；
+- [X] **`omitIndex`**，指定索引以删除这个位置的键值对；
 
-- [X] **`separator`**，分裂键的分隔符；
+- [X] **`separator`**，分裂键的分隔符；
 
-- [X] **`indexInKeyPattern`**，对象的键模式；
+- [X] **`indexInKeyPattern`**，对象的键模式；
 
 ## 参与开发
 
