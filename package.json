@@ -15,7 +15,7 @@
     "babel-build-sync-src": "npx babel -o ./esm-sync.js remap-indexed-keys-after-omit-sync.js",
     "babel-build-async-src": "npx babel -o ./esm.js remap-indexed-keys-after-omit.js",
     "webpack-build": "npx webpack",
-    "test": "npx nyc mocha ./test.babel.js ./*-test.js --opts ./mocha.opts",
+    "test": "npx nyc mocha ./test.babel.js ./*-test.js --opts ./mocha.opts","coverage": "npx nyc report --reporter=text-lcov | npx coveralls",
     "lint": "npx eslint --cache remap-indexed-keys-after-omit.js remap-indexed-keys-after-omit-sync.js",
     "license": "node ./scripts/license"
   },
@@ -44,6 +44,7 @@
     "babel-plugin-add-module-exports": "^1.0.0",
     "chai": "^4.2.0",
     "chalk": "^2.4.1",
+    "coveralls": "^3.0.2",
     "eslint": "^5.7.0",
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-plugin-import": "^2.14.0",

@@ -5,6 +5,7 @@ branches:
   only:
   - master
   - develop
+after_success: yarn coverage
 notifications:
   email:
     recipients:
