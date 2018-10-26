@@ -184,7 +184,7 @@ yarn test
 
 - [ ] 性能测试；
 
-- [ ] 捆绑 [Git 倒钩](https://github.com/typicode/husky)；
+- [X] 捆绑 [Git 倒钩](https://github.com/typicode/husky)；
 
 - [X] ESlint 检测；
 
