@@ -1,6 +1,6 @@
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/4de000aaca86479ab0dcf13622117d31)](https://www.codacy.com/app/swzyocowboy/remap-indexed-keys-after-omit?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=iTonyYo/remap-indexed-keys-after-omit&amp;utm_campaign=Badge_Grade) [![Build Status](https://travis-ci.org/iTonyYo/remap-indexed-keys-after-omit.svg?branch=master)](https://travis-ci.org/iTonyYo/remap-indexed-keys-after-omit) [![Coverage Status](https://coveralls.io/repos/github/iTonyYo/remap-indexed-keys-after-omit/badge.svg?branch=master)](https://coveralls.io/github/iTonyYo/remap-indexed-keys-after-omit?branch=master) [![dependencies Status](https://david-dm.org/iTonyYo/remap-indexed-keys-after-omit/status.svg)](https://david-dm.org/iTonyYo/remap-indexed-keys-after-omit)
 
-# `remapIndexedKeysAfterOmit()`
+# `@oopsunome/remap-indexed-keys-after-omit`
 
 针对键为 `index-x` 或 `x-index-y` 类似模式的被索引对象，如：
 
@@ -14,23 +14,38 @@
 
 可在移除某个键值对后，顺序重新索引所有键。
 
+[`@oopsunome/remap-indexed-keys-after-omit`][@oopsunome/remap-indexed-keys-after-omit] **支持在浏览器以及 Node.js 环境下使用**。Node.js 方面，持续且仅支持最新 LTS 版本的。
+
 ## 目录
 
-- [`remapIndexedKeysAfterOmitSync()`](#remapindexedkeysafteromitsync)
-- [`remapIndexedKeysAfterOmit()`](#remapindexedkeysafteromit)
-- [配置](#配置)
-- [参与开发](#参与开发)
-- [待办](#待办)
+## 安装
 
-## `remapIndexedKeysAfterOmitSync()`
+```shell
+# 使用 NPM
+$ npm i @oopsunome/remap-indexed-keys-after-omit lodash
 
-> 同步编程
+# 使用 Yarn
+$ yarn add @oopsunome/remap-indexed-keys-after-omit lodash
+
+# 使用 PNPM
+$ pnpm install @oopsunome/remap-indexed-keys-after-omit lodash
+```
+
+## 使用
+
+#### `remapIndexedKeysAfterOmitSync(options)`
+
+- `options` {Object}
+  - `object` {Object} 从小到大索引的对象
+  - `omitIndex` {Number} 待删除键值对的索引
+  - `keyPattern` {String} 对象的键模式
+  - `separator` {String} 分裂键的分隔符
+  - `indexPlaceholderInKeyPattern` {String} 指定索引占位
+  - `gap` {Number} 递减 / 递增幅度
+- 返回: {Object} 被顺序重新索引所有键的对象
 
 ```javascript
-const { remapIndexedKeysAfterOmitSync }
-  = require('remap-indexed-keys-after-omit-sync');
-
-// import { remapIndexedKeysAfterOmitSync } from 'remap-indexed-keys-after-omit-sync';
+import { remapIndexedKeysAfterOmitSync } from '@oopsunome/remap-indexed-keys-after-omit';
 
 (function() {
   const rslt = remapIndexedKeysAfterOmitSync({
@@ -48,16 +63,16 @@ const { remapIndexedKeysAfterOmitSync }
       '10-0': 596,
     },
     omitIndex: 9,
-    indexInKeyPattern: 'index-x',
+    keyPattern: 'index-x',
     separator: '-',
-    indexPlaceholder: 'index',
+    indexPlaceholderInKeyPattern: 'index',
     gap: 1,
   });
 
-  console.log(rslt);
+  console.table(rslt);
 
   /**
-   * rslt:
+   * 输出:
    * 
    * {
    *   '0-0': 254,
@@ -75,18 +90,22 @@ const { remapIndexedKeysAfterOmitSync }
 })();
 ```
 
-## `remapIndexedKeysAfterOmit()`
+#### `remapIndexedKeysAfterOmit(options)`
 
-> 通过 [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise) 实现异步编程
+- `options` {Object}
+  - `object` {Object} 从小到大索引的对象
+  - `omitIndex` {Number} 待删除键值对的索引
+  - `keyPattern` {String} 对象的键模式
+  - `separator` {String} 分裂键的分隔符
+  - `indexPlaceholderInKeyPattern` {String} 指定索引占位
+  - `gap` {Number} 递减 / 递增幅度
+- 返回: {Promise} 被顺序重新索引所有键的对象
 
 ```javascript
-const { remapIndexedKeysAfterOmit }
-  = require('remap-indexed-keys-after-omit');
-
-// import { remapIndexedKeysAfterOmit } from 'remap-indexed-keys-after-omit';
+import { remapIndexedKeysAfterOmit } from '@oopsunome/remap-indexed-keys-after-omit';
 
 (async () => {
-  console.log(await remapIndexedKeysAfterOmit({
+  console.table(await remapIndexedKeysAfterOmit({
     object: {
       '0-0': 254,
       '1-0': 7892,
@@ -101,14 +120,14 @@ const { remapIndexedKeysAfterOmit }
       '10-0': 596,
     },
     omitIndex: 9,
-    indexInKeyPattern: 'index-x',
+    keyPattern: 'index-x',
     separator: '-',
-    indexPlaceholder: 'index',
+    indexPlaceholderInKeyPattern: 'index',
     gap: 1,
   }));
 
   /**
-   * rslt:
+   * 输出:
    * 
    * {
    *   '0-0': 254,
@@ -125,32 +144,16 @@ const { remapIndexedKeysAfterOmit }
    */
 })();
 ```
-  
-## 配置
-
-- [X] **`indexPlaceholder`**，支持自定义索引占位符；
-
-- [X] **`gap`**，支持自定义递减/递增幅度；
-
-- [X] **`object`**，支持传入 `从小到大索引` 的对象；
-
-- [ ] **`object`**，支持传入 `从大到小索引` 的对象；
-
-- [X] **`omitIndex`**，指定索引以删除这个位置的键值对；
-
-- [X] **`separator`**，分裂键的分隔符；
-
-- [X] **`indexInKeyPattern`**，对象的键模式；
 
 ## 参与开发
 
 **准备开发环境**
 
-详细参见 [SETUP.md]()。
+详细参见 [SETUP.md][SETUP.md]。
 
 **安装依赖**
 
-[`remap-indexed-keys-after-omit`]() 使用 [`Yarn`](https://yarnpkg.com/zh-Hans/) 包管理器，执行 `yarn install` 安装依赖。
+[`@oopsunome/remap-indexed-keys-after-omit`][@oopsunome/remap-indexed-keys-after-omit] 使用 [`Yarn`][Yarn] 包管理器，执行 `yarn install` 安装依赖。
 
 **开始开发**
 
@@ -170,36 +173,57 @@ yarn build
 yarn test
 ```
 
+## 贡献指南
+
+仔细查阅 [CONTRIBUTING.md][贡献指南] 以了解详情。
+
+## 证书
+
+[`@oopsunome/manual-sort`][@oopsunome/manual-sort] 获得了 MIT 许可，仔细查阅 [LICENSE.md][证书] 以了解详情。
+
 ## 待办
 
+- [ ] 支持操作 `从大到小索引` 的对象；
 - [ ] 为所有的配置提供默认值；
-
 - [X] 支持 `解构` 或 `直接引用` 2 种暴露接口的方式；
-
 - [X] 提供同步、异步 2 种编程方式，异步编程采用 `Promise`；
-
 - [X] 支持构建 `CommonJS`, `AMD`, `ESM`, `UMD` 模式的模块；
-
 - [X] 不将 `lodash` 等库打包；
-
 - [X] 功能测试；
-
+- [X] 捆绑 [Git 倒钩][Git倒钩]；
+- [X] ESlint 检测；
+- [X] 自动化生成所有依赖的开源证书；
+- [X] 使用 [David DM][DavidDM] 实现 `依赖是否最新` 检测；
+- [X] 使用 [Travis CI][TravisCI] 实现持续集成；
+- [X] 使用 [Coveralls][Coveralls] 可视化测试用例覆盖率；
+- [X] 使用 [Codacy][Codacy] 实现代码质量检测；
+- [X] 更新日志；
+- [ ] 自动化发布；
+- [ ] 在什么场景下使用 [`@oopsunome/remap-indexed-keys-after-omit`][@oopsunome/remap-indexed-keys-after-omit]?
+- [ ] 编写 [开发环境指南][SETUP.md]；
+- [ ] 文档：在哪里可以获得更多帮助？
+- [ ] 文档：设计思想；
+- [ ] 文档：维护策略；
+- [ ] 文档：[编码风格指南][编码风格指南]；
+- [ ] 编写 [发布流程指南][发布流程指南]；
+- [ ] 编写 [Git 指南][Git指南]；
+- [ ] 编写 [命名指南][命名指南]；
+- [ ] 编写 [版本指南][版本指南]；
 - [ ] 性能测试；
 
-- [X] 捆绑 [Git 倒钩](https://github.com/typicode/husky)；
 
-- [X] ESlint 检测；
-
-- [X] 自动化生成所有依赖的开源证书；
-
-- [ ] 自动化发布；
-
-- [X] 使用 [David DM](https://david-dm.org/) 实现 `依赖是否最新` 检测；
-
-- [X] 使用 [Travis CI](https://travis-ci.org/) 实现持续集成；
-
-- [X] 使用 [Coveralls](https://coveralls.io/) 可视化测试用例覆盖率；
-
-- [X] 使用 [Codacy](https://www.codacy.com/) 实现代码质量检测；
-
-- [ ] 编写 [`SETUP.md`]()；
+[编码风格指南]: #
+[版本指南]: #
+[命名指南]: #
+[Git指南]: #
+[发布流程指南]: #
+[Git倒钩]: https://github.com/typicode/husky
+[DavidDM]: https://david-dm.org/
+[TravisCI]: https://travis-ci.org/
+[Coveralls]: https://coveralls.io/
+[Codacy]: https://www.codacy.com/
+[@oopsunome/remap-indexed-keys-after-omit]: https://github.com/iTonyYo/remap-indexed-keys-after-omit
+[SETUP.md]: #
+[Yarn]: https://yarnpkg.com/zh-Hans/
+[贡献指南]: https://github.com/iTonyYo/remap-indexed-keys-after-omit/blob/master/CONTRIBUTING.md
+[证书]: https://github.com/iTonyYo/remap-indexed-keys-after-omit/blob/master/LICENSE.md
