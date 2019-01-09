@@ -13,7 +13,7 @@
   "watch": [
     "remap-indexed-keys-after-omit.js",
     "remap-indexed-keys-after-omit-sync.js",
-    "debug.js"
+    "dev.js"
   ],
   "env": {
     "NODE_ENV": "development"
