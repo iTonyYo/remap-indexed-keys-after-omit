@@ -14,11 +14,45 @@ module.exports = {
     globalObject: 'this',
   },
   externals: {
-    lodash: {
-      commonjs: 'lodash',
-      commonjs2: 'lodash',
-      amd: 'lodash',
-      root: '_'
+    'lodash/isEqual': {
+      commonjs: 'lodash/isEqual',
+      commonjs2: 'lodash/isEqual',
+      amd: 'lodash/isEqual',
+    },
+    'lodash/map': {
+      commonjs: 'lodash/map',
+      commonjs2: 'lodash/map',
+      amd: 'lodash/map',
+    },
+    'lodash/omit': {
+      commonjs: 'lodash/omit',
+      commonjs2: 'lodash/omit',
+      amd: 'lodash/omit',
+    },
+    'lodash/mapKeys': {
+      commonjs: 'lodash/mapKeys',
+      commonjs2: 'lodash/mapKeys',
+      amd: 'lodash/mapKeys',
+    },
+    'lodash/split': {
+      commonjs: 'lodash/split',
+      commonjs2: 'lodash/split',
+      amd: 'lodash/split',
+    },
+    'lodash/findIndex': {
+      commonjs: 'lodash/findIndex',
+      commonjs2: 'lodash/findIndex',
+      amd: 'lodash/findIndex',
+    },
+    'lodash/join': {
+      commonjs: 'lodash/join',
+      commonjs2: 'lodash/join',
+      amd: 'lodash/join',
+    },
+    'lodash/keys': {
+      commonjs: 'lodash/keys',
+      commonjs2: 'lodash/keys',
+      amd: 'lodash/keys',
     }
   },
   module: {

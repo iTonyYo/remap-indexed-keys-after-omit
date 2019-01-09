@@ -1,13 +1,11 @@
-import {
-  isEqual,
-  map,
-  omit,
-  mapKeys,
-  split,
-  findIndex,
-  join,
-  keys,
-} from 'lodash';
+import isEqual from 'lodash/isEqual';
+import map from 'lodash/map';
+import omit from 'lodash/omit';
+import mapKeys from 'lodash/mapKeys';
+import split from 'lodash/split';
+import findIndex from 'lodash/findIndex';
+import join from 'lodash/join';
+import keys from 'lodash/keys';
 
 /**
  * `index-in-key` object,
@@ -25,25 +23,25 @@ import {
  *   - [ ] 分离 `mapKeys` 部分的逻辑
  *
  * @param {Object} object - 从小到大索引的对象
- * @param {String} indexInKeyPattern - 对象的键模式
+ * @param {String} keyPattern - 对象的键模式
  * @param {String} separator - 分裂键的分隔符
  * @param {Number} omitIndex - 指定索引以删除这个位置的键值对
- * @param {String} indexPlaceholder - 指定索引占位
+ * @param {String} indexPlaceholderInKeyPattern - 指定索引占位
  * @param {Number} gap - 指定递减 / 递增幅度
  */
 export default function remapIndexedKeysAfterOmit({
   object,
   omitIndex,
-  indexInKeyPattern,
+  keyPattern,
   separator,
-  indexPlaceholder,
+  indexPlaceholderInKeyPattern,
   gap,
 }) {
   return new Promise((resolve) => {
-    // 寻找到 `indexInKeyPattern` 中索引占位符的位置
+    // 寻找到 `keyPattern` 中索引占位符的位置
     const idxPos = findIndex(
-      split(indexInKeyPattern, separator),
-      item => isEqual(item, indexPlaceholder),
+      split(keyPattern, separator),
+      item => isEqual(item, indexPlaceholderInKeyPattern),
     );
 
     // 寻找到待删除键值对的键
