@@ -1,0 +1,16 @@
+{
+  "linters": {
+    "remap-indexed-keys-after-omit.js": [
+      "npx eslint --cache",
+      "yarn test"
+    ],
+    "remap-indexed-keys-after-omit-sync.js": [
+      "npx eslint --cache",
+      "yarn test"
+    ]
+  },
+  "ignore": [
+    "**/scripts/**",
+    "**/coverage/**"
+  ]
+}

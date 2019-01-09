@@ -1,14 +1,18 @@
-const trash          = require('trash');
+const execa = require('execa');
+
 const { resolveApp } = require('./util');
+const scriptsDir = resolveApp('scripts');
 
-trash([
-  resolveApp('remap-indexed-keys-after-omit.tar'),
+(async () => {
+  await execa('node', [
+    `${scriptsDir}/clean-built.js`
+  ]);
 
-  resolveApp('esm.js'),
-  resolveApp('esm-sync.js'),
+  await execa('node', [
+    `${scriptsDir}/clean-reports.js`
+  ]);
 
-  resolveApp('umd.js'),
-  resolveApp('umd-sync.js'),
-
-  resolveApp('coverage'),
-]);
+  await execa('node', [
+    `${scriptsDir}/clean-cache.js`
+  ]);
+})();
