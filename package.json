@@ -71,7 +71,7 @@
     "node": ">=10.13.0"
   },
   "name": "@oopsunome/remap-indexed-keys-after-omit",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "针对键为 `index-x` 或 `x-index-y` 类似模式的被索引对象，可在移除某个键值对后，顺序重新索引所有键。",
   "author": {
     "name": "iyowei",

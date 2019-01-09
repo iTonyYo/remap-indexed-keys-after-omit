@@ -1,5 +1,11 @@
 # [`@oopsunome/remap-indexed-keys-after-omit`](https://github.com/iTonyYo/remap-indexed-keys-after-omit) 更新日志
 
+## [v1.0.1](https://github.com/iTonyYo/remap-indexed-keys-after-omit/compare/v1.0.0...v1.0.1) - 2019-01-09
+
+#### 提交
+
+- [[`33dfcda`](https://github.com/iTonyYo/remap-indexed-keys-after-omit/commit/33dfcda43a8eac0ac5632ebf90693c73e11b262d)] 文档: :memo: 更新文档
+- [[`bdf7c5d`](https://github.com/iTonyYo/remap-indexed-keys-after-omit/commit/bdf7c5dcd3cbf07da95a952c7436978d87c1ff4e)] 工程: :clapper: 调整更新日志模板
 ## v1.0.0 - 2019-01-09
 
 #### 提交
