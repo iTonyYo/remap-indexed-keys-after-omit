@@ -11,6 +11,4 @@ webpack.config.babel.js
 scripts/**
 coverage/**
 
-debug.js
-
-test.babel.js
+dev.js
