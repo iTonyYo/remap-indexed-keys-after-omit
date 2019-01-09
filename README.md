@@ -17,6 +17,14 @@
 [`@oopsunome/remap-indexed-keys-after-omit`][@oopsunome/remap-indexed-keys-after-omit] **支持在浏览器以及 Node.js 环境下使用**。Node.js 方面，持续且仅支持最新 LTS 版本的。
 
 ## 目录
+- [安装](#安装)
+- [使用](#使用)
+    - [`remapIndexedKeysAfterOmitSync(options)`](#remapindexedkeysafteromitsyncoptions)
+    - [`remapIndexedKeysAfterOmit(options)`](#remapindexedkeysafteromitoptions)
+- [参与开发](#参与开发)
+- [贡献指南](#贡献指南)
+- [证书](#证书)
+- [待办](#待办)
 
 ## 安装
 
