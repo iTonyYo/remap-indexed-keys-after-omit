@@ -1,3 +1,6 @@
+# https://git.io/vdcSr
+--require @babel/register
+
 -u exports
 -c
 -t 120s
