@@ -1061,10 +1061,10 @@ atob@^2.1.1:
   resolved "https://registry.yarnpkg.com/atob/-/atob-2.1.2.tgz#6d9517eb9e030d2436666651e86bd9f6f13533c9"
   integrity sha512-Wm6ukoaOGJi/73p/cl2GvLjTI5JM1k/O14isD73YML8StrH/7/lRFgmg8nICZgD3bZZvjwCGxtMOD3wWNAu8cg==
 
-auto-changelog@^1.10.3:
-  version "1.10.3"
-  resolved "https://registry.yarnpkg.com/auto-changelog/-/auto-changelog-1.10.3.tgz#498da9b1f8752c46c76684f26c3e43a3e0b07429"
-  integrity sha512-VBRDh7Xu0zzAQCMhFYPYx/Qma4y16n03Lol5ZKOYvFaU/68D26ohU7v1g9f2EGJ2Zp8YMcsuoX1d9G7l7t9qGw==
+auto-changelog@^1.11.0:
+  version "1.11.0"
+  resolved "https://registry.yarnpkg.com/auto-changelog/-/auto-changelog-1.11.0.tgz#c302aa534892ee77df242862cd21717f51b1c54f"
+  integrity sha512-WvG2WBbPPYqAkqlF2SSKktdQ0jhOG37GvybrJxUKv4uxp/KVzqC0+ptgbcUJAbaFyLGEApbTtGS36K5vSC2jGQ==
   dependencies:
     "@babel/polyfill" "^7.0.0"
     commander "^2.19.0"
@@ -2222,10 +2222,10 @@ eslint-visitor-keys@^1.0.0:
   resolved "https://registry.yarnpkg.com/eslint-visitor-keys/-/eslint-visitor-keys-1.0.0.tgz#3f3180fb2e291017716acb4c9d6d5b5c34a6a81d"
   integrity sha512-qzm/XxIbxm/FHyH341ZrbnMUpe+5Bocte9xkmFMzPMjRaZMcXww+MpBptFvtU+79L362nqiLhekCxCxDPaUMBQ==
 
-eslint@^5.12.0:
-  version "5.12.0"
-  resolved "https://registry.yarnpkg.com/eslint/-/eslint-5.12.0.tgz#fab3b908f60c52671fb14e996a450b96c743c859"
-  integrity sha512-LntwyPxtOHrsJdcSwyQKVtHofPHdv+4+mFwEe91r2V13vqpM8yLr7b1sW+Oo/yheOPkWYsYlYJCkzlFAt8KV7g==
+eslint@^5.12.1:
+  version "5.12.1"
+  resolved "https://registry.yarnpkg.com/eslint/-/eslint-5.12.1.tgz#5ca9931fb9029d04e7be92b03ce3b58edfac7e3b"
+  integrity sha512-54NV+JkTpTu0d8+UYSA8mMKAG4XAsaOrozA9rCW7tgneg1mevcL7wIotPC+fZ0SkWwdhNqoXoxnQCTBp7UvTsg==
   dependencies:
     "@babel/code-frame" "^7.0.0"
     ajv "^6.5.3"
