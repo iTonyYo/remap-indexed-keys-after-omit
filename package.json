@@ -24,15 +24,18 @@
   },
   "keywords": [
     "object",
-    "remapIndexedKeys",
-    "remapKeys",
-    "mapKeys",
     "index",
-    "omit",
-    "modules",
+    "helper",
+    "mapper",
     "util",
     "utilities",
-    "library"
+    "library",
+    "modules",
+    "mapKeys",
+    "omit",
+    "remapIndexedKeys",
+    "remapKeys",
+    "oopsunome"
   ],
   "peerDependencies": {
     "lodash": "^4.17.11"
