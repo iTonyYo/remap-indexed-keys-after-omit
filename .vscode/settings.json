@@ -12,7 +12,7 @@
   "zenMode.restore": true,
   "editor.letterSpacing": 1,
   "editor.dragAndDrop": true,
-  "workbench.colorTheme": "PowerShell ISE",
+  "workbench.colorTheme": "Dracula",
   "workbench.iconTheme": "vscode-icons",
   "files.exclude": {
     "**/.git": true,
@@ -80,12 +80,54 @@
       "backgroundColor": "#2f3542"
     },
     {
-      "text": "SUMMARY:",
+      "text": "LOGIC:",
+      "color": "#fff",
+      "border": "1px solid #fff",
+      "borderRadius": "3px",
+      "backgroundColor": "#B0B6BC"
+    },
+    {
+      "text": "DEBUG:",
+      "color": "#fff",
+      "border": "1px solid #fff",
+      "borderRadius": "3px",
+      "backgroundColor": "#B0B6BC"
+    },
+    {
+      "text": "QUESTION:",
+      "color": "#fff",
+      "border": "1px solid #fff",
+      "borderRadius": "3px",
+      "backgroundColor": "#fc8458"
+    },
+    {
+      "text": "DECISION",
+      "color": "#fff",
+      "border": "1px solid #fff",
+      "borderRadius": "3px",
+      "backgroundColor": "#2ed573"
+    },
+    {
+      "text": "PROCESS",
+      "color": "#000",
+      "border": "1px solid #fff",
+      "borderRadius": "3px"
+    },
+    {
+      "text": "ASYNC PROCESSs",
+      "color": "#fff",
+      "border": "1px solid #fff",
+      "borderRadius": "3px",
+      "backgroundColor": "#005cc5"
+    },
+    {
+      "text": "FINISH",
       "color": "#fff",
       "border": "1px solid #fff",
       "borderRadius": "3px",
       "backgroundColor": "#2f3542"
-    }
+    },
+
   ],
   "todohighlight.include": [
     "**/*.js",
