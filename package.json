@@ -11,7 +11,7 @@
   ],
   "scripts": {
     "start": "npx nodemon ./dev.js --config ./nodemon.json -q",
-    "build": "npx babel-node ./scripts/clean && npm run babel-build-sync-src && npm run babel-build-async-src && npm run webpack-build",
+    "build": "npx babel-node ./scripts/clean-built && npm run babel-build-sync-src && npm run babel-build-async-src && npm run webpack-build",
     "babel-build-sync-src": "npx babel -o ./esm-sync.js remap-indexed-keys-after-omit-sync.js",
     "babel-build-async-src": "npx babel -o ./esm.js remap-indexed-keys-after-omit.js",
     "webpack-build": "npx webpack",
