@@ -1,5 +1,10 @@
 # [`@oopsunome/remap-indexed-keys-after-omit`](https://github.com/iTonyYo/remap-indexed-keys-after-omit) 更新日志
 
+## [v1.0.3](https://github.com/iTonyYo/remap-indexed-keys-after-omit/compare/v1.0.2...v1.0.3) - 2019-04-12
+
+#### 提交
+
+- [[`3ecd9f0`](https://github.com/iTonyYo/remap-indexed-keys-after-omit/commit/3ecd9f0d65a8c073c0079e34b3d2be41c72912bf)] 工作流: :railway_track: 升级 Mocha 至 v6.x.x+
 ## [v1.0.2](https://github.com/iTonyYo/remap-indexed-keys-after-omit/compare/v1.0.1...v1.0.2) - 2019-04-12
 
 #### 提交
@@ -10,11 +15,12 @@
 - [[`a24c5a6`](https://github.com/iTonyYo/remap-indexed-keys-after-omit/commit/a24c5a6ed2f1f7e16d2c0ca208d785c1876dc9d9)] 工程: :clapper: 新增若干待办标记 & 变更编辑器的颜色主题
 - [[`732b905`](https://github.com/iTonyYo/remap-indexed-keys-after-omit/commit/732b905bb490ae89b4c425531d9c249d8679f199)] 工程: :arrow_up: 升级若干开发依赖
 - [[`d42e309`](https://github.com/iTonyYo/remap-indexed-keys-after-omit/commit/d42e309b58fdb88696a826d54505a69db2451624)] 工程: :arrow_up: 升级开发依赖
+- [[`31bccf2`](https://github.com/iTonyYo/remap-indexed-keys-after-omit/commit/31bccf22b259ebe06e83451a06aa2a72b87b5546)] 发版: :bookmark: v1.0.2
 - [[`101e6a4`](https://github.com/iTonyYo/remap-indexed-keys-after-omit/commit/101e6a4d672f8f34c7890165795840df388c3261)] 工程: :clapper: 新增若干关键字
 - [[`79d6ed0`](https://github.com/iTonyYo/remap-indexed-keys-after-omit/commit/79d6ed0187ce2f982926bd905d2ffd0cce185a90)] 文档: :memo: 提供专门针对 Github 的问题、混合请求消息模板
 - [[`8c39024`](https://github.com/iTonyYo/remap-indexed-keys-after-omit/commit/8c39024e3c032f5806b823537c4d075388d5368a)] 工作流: :railway_track: 详细配置 `@babel/env`
-- [[`5ce3907`](https://github.com/iTonyYo/remap-indexed-keys-after-omit/commit/5ce39070837aa4016c58a927aa9c0fe83da6049a)] 工作流: :railway_track: 执行 `build` 指令时仅删除上次构建，不删除其它诸如证书列表等
 - [[`a5eff66`](https://github.com/iTonyYo/remap-indexed-keys-after-omit/commit/a5eff6640291508a107d680b8c5bd1095810f77d)] 工作流: :railway_track: 使 NPM 输出最小日志
+- [[`5ce3907`](https://github.com/iTonyYo/remap-indexed-keys-after-omit/commit/5ce39070837aa4016c58a927aa9c0fe83da6049a)] 工作流: :railway_track: 执行 `build` 指令时仅删除上次构建，不删除其它诸如证书列表等
 - [[`7651bdb`](https://github.com/iTonyYo/remap-indexed-keys-after-omit/commit/7651bdb816bf64a34f681418b4f1f7c0b396935e)] 工作流: :railway_track: 增加若干提交主题
 ## [v1.0.1](https://github.com/iTonyYo/remap-indexed-keys-after-omit/compare/v1.0.0...v1.0.1) - 2019-01-09
 
