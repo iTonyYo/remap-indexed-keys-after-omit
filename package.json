@@ -16,7 +16,7 @@
     "babel-build-async-src": "npx babel -o ./esm.js remap-indexed-keys-after-omit.js",
     "webpack-build": "npx webpack",
     "reprepare": "npx babel-node ./scripts/re-prepare",
-    "test": "npx nyc mocha ./*-test.js --opts ./mocha.opts",
+    "test": "npx nyc mocha --require @babel/register --no-opts --no-package ./*-test.js",
     "coverage": "npx nyc report --reporter=text-lcov | npx coveralls",
     "lint": "npx eslint --cache remap-indexed-keys-after-omit.js remap-indexed-keys-after-omit-sync.js",
     "license": "npx babel-node ./scripts/license",
